@@ -1,0 +1,385 @@
+.container {
+  margin: 0;
+  background: url(/bg-sidebar-mobile.svg);
+  background-size: auto;
+  background-repeat: no-repeat;
+  padding-top: 30px;
+  min-height: 600px;
+  min-width: 375px;
+  background-color: hsl(205, 100%, 93%);
+}
+
+.pageno {
+  margin: 0;
+  justify-content: center;
+  display: flex;
+  padding-bottom: 40px;
+}
+
+.pageno > div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 30px;
+  width: 30px;
+  border: 2px hsl(206, 94%, 87%) solid;
+  border-radius: 50%;
+  margin: 0 10px;
+}
+
+.tab-bg0 {
+  background-color: rgb(184, 240, 255);
+}
+
+.all-tab-bg {
+  background-color: rgb(184, 240, 255);
+}
+
+.btn {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 15px;
+}
+
+.btn-gonext {
+  font-weight: 500;
+  border: none;
+  height: 40px;
+  width: 110px;
+  font-family: Ubuntu;
+  background-color: hsl(213, 96%, 18%);
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btn-marginleft {
+  margin-left: auto;
+}
+
+.btn-marginright {
+  margin-right: auto;
+}
+
+.btn-goback {
+  height: 40px;
+  cursor: pointer;
+  font-weight: 500;
+  font-family: Ubuntu;
+  color: hsl(231, 11%, 63%);
+  border: none;
+  background-color: white;
+}
+
+.btn-disabled {
+  display: none;
+}
+
+/* 1stcomp */
+
+.toptext-container {
+  margin: 0;
+  background-color: white;
+  width: 310px;
+  border-radius: 10px;
+  margin: auto;
+  padding: 10px 15px;
+  box-shadow: 0px 0px 15px 3px rgba(158, 158, 158, 0.349);
+}
+
+.toptext-container > h1 {
+  font-size: 1.5rem;
+  margin: 0;
+}
+
+.toptext-container > p {
+  font-size: 1rem;
+  margin-top: 0;
+  color: hsl(231, 11%, 63%);
+  margin-bottom: 15px;
+}
+
+.input-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.input-container > input {
+  padding-left: 10px;
+  font-weight: 500;
+  font-family: Ubuntu;
+  color: hsl(231, 11%, 63%);
+  height: 35px;
+  margin-bottom: 10px;
+  background-color: white;
+  border: 1px solid hsla(231, 11%, 63%, 0.489);
+  border-radius: 5px;
+}
+
+/* plan comp */
+
+.plan-container {
+  height: 60px;
+  padding: 15px;
+  display: flex;
+  border: 2px solid rgba(91, 91, 91, 0.299);
+  border-radius: 7px;
+  margin-bottom: 15px;
+  align-items: center;
+}
+
+.plan-border {
+  border: 2px solid hsl(243, 100%, 62%);
+}
+.plan-container > img {
+  margin-right: 15px;
+}
+
+.plan-container > div > h4,
+p {
+  font-family: Ubuntu;
+  margin: 0;
+}
+
+.plan-container > div > p {
+  font-size: 0.9rem;
+  color: hsl(231, 11%, 63%);
+}
+
+/* slider */
+
+.switch {
+  font-size: 17px;
+  position: relative;
+  display: inline-block;
+  width: 2.8em;
+  height: 1.3em;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #fff;
+  border: 1px solid #adb5bd;
+  transition: 0.4s;
+  border-radius: 30px;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 0.9em;
+  width: 0.9em;
+  border-radius: 20px;
+  left: 0.27em;
+  bottom: 0.17em;
+  background-color: #adb5bd;
+  transition: 0.4s;
+}
+
+input:checked + .slider {
+  background-color: hsl(213, 96%, 18%);
+  border: 1px solid hsl(213, 96%, 18%);
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #007bff;
+}
+
+input:checked + .slider:before {
+  transform: translateX(1.4em);
+  background-color: #fff;
+}
+
+.plan-duration {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.h4-gray {
+  color: #adb5bd;
+}
+
+.h4-blue {
+  color: hsl(213, 96%, 18%);
+}
+
+/* addon */
+
+.addon-container {
+  border: 2px solid rgba(91, 91, 91, 0.299);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 7px;
+  margin-bottom: 15px;
+  padding: 0px 10px;
+}
+
+.addon-border {
+  border: 2px solid hsl(243, 100%, 62%);
+}
+
+.addon-left {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.addon-left > div > h4,
+p {
+  display: flex-start;
+  margin: 0;
+}
+
+.addon-left > div > p {
+  font-size: 0.9rem;
+  color: #adb5bd;
+}
+
+.addon-container > div > h5 {
+  color: hsl(243, 100%, 62%);
+}
+
+.checkbox {
+  cursor: pointer;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border: none;
+  outline: none;
+  width: 20px;
+  height: 20px;
+  background-color: #fff;
+  border-radius: 4px;
+  box-shadow: inset 0 0 0 1px #d5d5d5;
+}
+
+.checkbox:checked {
+  box-shadow: inset 0 0 0 4px #0088ff;
+  background-color: #0088ff;
+}
+
+.checkbox:checked::before {
+  content: "\2713";
+  display: block;
+  text-align: center;
+  font-size: 14px;
+  color: #fff;
+  margin: 0 auto;
+}
+
+/* comp4 */
+
+.confirm-container {
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.confirm-background {
+  background-color: #f1f4ff;
+  padding-bottom: 0;
+  padding: 10px 20px;
+  border-radius: 7px;
+  margin-bottom: 10px;
+}
+
+.confirm-container > div > h4,
+p {
+  margin: 0;
+}
+
+.confirm-container > div > u {
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 0.9rem;
+  color: #adb5bd;
+}
+
+.confirm-container1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.confirm-container1 > p {
+  font-weight: 500;
+  font-size: 0.9rem;
+  color: #adb5bd;
+}
+
+.confirm-container1 > h5 {
+  color: hsl(213, 100%, 36%);
+  font-size: 0.8rem;
+  font-weight: 500;
+  margin: 0;
+}
+
+hr {
+  color: #cccecf5f;
+}
+
+.total-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.total-container > p {
+  font-size: 0.9rem;
+  color: #242424;
+  font-weight: 500;
+}
+
+.total-container > h5 {
+  color: hsl(213, 100%, 36%);
+}
+
+/* comp5 */
+.thankyou-container > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 35px 0;
+}
+
+.thankyou-container > div > h4 {
+  font-size: 1.2rem;
+}
+
+.thankyou-container > div > p {
+  width: 300px;
+  font-size: 1rem;
+  color: #8b9298;
+  text-align: center;
+}
+
+/* Marine blue: hsl(213, 96%, 18%)
+- Purplish blue: hsl(243, 100%, 62%)
+- Pastel blue: hsl(228, 100%, 84%)
+- Light blue: hsl(206, 94%, 87%)
+- Strawberry red: hsl(354, 84%, 57%)
+
+### Neutral
+
+- Cool gray: hsl(231, 11%, 63%)
+- Light gray: hsl(229, 24%, 87%)
+- Magnolia: hsl(217, 100%, 97%)
+- Alabaster: hsl(231, 100%, 99%)
+- White: hsl(0, 0%, 100%) */
